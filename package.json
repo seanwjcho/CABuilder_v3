@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "mongodb": "^4.8.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "net": "^1.0.2",
+    "next": "latest",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-router-dom": "^6.3.0",
+    "serverless-mysql": "^1.5.4",
+    "tls": "^0.0.1"
+  }
+}

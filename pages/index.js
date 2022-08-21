@@ -19,15 +19,21 @@ export default function Home() {
         <div className="grid">
           <Link href = "/developer">
             <a className="card">
-              <h3>Developer </h3>
+              <h3>Developer</h3>    
               <p>Submit a text file, to generate your single-turn conversational app!</p>
             </a>
           </Link>
 
           <Link href = "/user">
             <a className="card">
-              <h3>User </h3>
+              <h3>User</h3> 
               <p>Interact with any of the submitted conversation apps.</p>
+            </a>
+          </Link>
+
+          <Link href = "/help">
+            <a className = "card">
+              <h3>Help</h3>
             </a>
           </Link>
 
@@ -37,12 +43,9 @@ export default function Home() {
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Created by Sean Cho and Kathryn Zhou. 
+          We would love to thank our mentor, Abhijeet Vijakayar.
         </a>
       </footer>
 
@@ -130,7 +133,6 @@ export default function Home() {
           align-items: center;
           justify-content: center;
           flex-wrap: wrap;
-
           max-width: 800px;
           margin-top: 3rem;
         }
@@ -145,7 +147,10 @@ export default function Home() {
           border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
+          position:relative;
         }
+
+      
 
         .card:hover,
         .card:focus,

@@ -12,7 +12,7 @@ export default async function handler(req, res){
 
     if (req.method == "POST") {
         try {
-            const query = "SELECT prompt_id, prompt_text FROM prompts WHERE program_id = ?";
+            const query = "SELECT prompt_id, prompt_text FROM prompts WHERE program_id = ? AND tokenized is NULL";
             const values = [req.body];
             const [data] = await dbconnection.execute(query, values);
         

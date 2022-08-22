@@ -140,9 +140,9 @@ export default async function handler(req, res){
                         //link prompt to primitive id 
                         console.log("Reached here");
                         var id = lines[line].match(/\*.*?\*/);
+                        id = id[0].slice(1,-1)
                         //if there is no id, then we just add nothing 
                         if (id != null) {
-                            id = id[0].slice(1,-1)
                             try { 
                                 console.log("id here")
                                 console.log(id)

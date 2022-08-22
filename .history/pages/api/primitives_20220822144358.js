@@ -50,9 +50,10 @@ export default async function handler(req, res) {
         }
 
         response_text = response_text.replaceAll("$", "");
-        console.log(response_text);
+
         dbconnection.end()
         return res.status(200).json({response: response_text});
+
 
     }
 
@@ -171,24 +172,24 @@ export default async function handler(req, res) {
         return res.status(200).json({response: response_text});
     }
 
-    else if (req.body == 2) { //random //easy primitive function for 2 parameter - kathryn
+    else if (req.body == 2) { //random //easy primitive function for 2 parameter
     
     }
 
-    else if (req.body == 3) { //3 parameters function // tax calculator - sean
+    else if (req.body == 3) { //3 parameters function // tax calculator
         //city 
         //total cost 
         //currency 
     }
 
-    else if (req.body == 4) { //3 parameters function // tip calculator - sean
+    else if (req.body == 4) { //3 parameters function // tip calculator
         //tip percentage
         //total cost 
         //currency 
     }
 
-    else if (req.body == 5) { //city weather calculator - kathryn
-        //one city
+    else if (req.body == 5) { //1 paremeters function
+        
     }
 
 

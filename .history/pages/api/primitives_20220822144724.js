@@ -171,7 +171,7 @@ export default async function handler(req, res) {
         return res.status(200).json({response: response_text});
     }
 
-    else if (req.body == 2) { //random //easy primitive function for 2 parameter - kathryn
+    else if (req.body == 2) { //random //easy primitive function for 2 parameter
     
     }
 
